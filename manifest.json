@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Autoplius.lt Comments",
+  "version": "0.1",
+  "author": "Tuscias",
+  "description": "Comments support for https://autoplius.lt website",
+  "content_scripts": [{
+    "matches": ["https://autoplius.lt/skelbimai*.html"],
+    "js": ["jquery-2.2.4.min.js", "content.js"]
+  }],
+  "icons":{"128": "icon.png"},
+  "browser_action": {
+    "default_icon": "icon.png"
+  }
+}
